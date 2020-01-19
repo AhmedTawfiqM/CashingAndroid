@@ -38,6 +38,18 @@ dependencies {
     implementation "com.squareup.moshi:moshi:$version_moshi"
     implementation "com.squareup.moshi:moshi-kotlin:$version_moshi"
 
+    implementation 'com.squareup.retrofit2:retrofit:2.6.0'
+    // Retrofit for networking
+    implementation "com.squareup.retrofit2:converter-moshi:2.6.0"
+    implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+
+    // Coroutines for getting off the UI thread
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.2.1"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.1"
+
+    // WorkManager
+    implementation "android.arch.work:work-runtime-ktx:$version_work"
+
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
